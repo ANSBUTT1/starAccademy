@@ -12,14 +12,14 @@ const Navbar = () => {
 
 
     return (
-        <div >
-            <div className='flex flex-row justify-between p-5 md:px-32 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
+        <div className='top-0 left-0 fixed w-full' >
+            <div className=' flex flex-row justify-between p-5 md:px-32 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
                 <div>
                     <Link to="/" className='font-semibold text-2xl p-1 cursor-pointer'>
-                        StarAccademy
+                        star<span className='text-brightGreen'>Accademy</span>
                     </Link>
                 </div>
-                <nav className='hidden md:flex lex gap-5 font-medium p-1 cursor-default'>
+                <nav className='hidden md:flex  gap-5 font-medium p-1 cursor-default'>
                     <Link
                         to="home"
                         spy={true}
@@ -58,7 +58,7 @@ const Navbar = () => {
                         smooth={true}
                         duration={500}
                         className=' p-[3px] font-semibold bg-green-300 hover:shadow-xl hover:bg-brightGreen text-white rounded-md transition-all cursor-pointer'>
-                        Contact Us
+                        Contact
                     </Link >
                 </nav>
                 <div className='flex md:hidden' onClick={handleChange} >
@@ -103,14 +103,14 @@ const Navbar = () => {
                     Reviews
                 </Link >
                 <div className='flex justify-center'>
-                <Link
-                    to="contact"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    className=' p-[3px] font-semibold bg-green-300 hover:shadow-xl hover:bg-brightGreen text-white rounded-md transition-all cursor-pointer'>
-                    Contact Us
-                </Link >
+                    <Link
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        className=' p-[3px] font-semibold bg-green-300 hover:shadow-xl hover:bg-brightGreen text-white rounded-md transition-all cursor-pointer'>
+                        Contact Us
+                    </Link >
                 </div>
             </div>
         </div>
